@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(
+        ./akfb4o95.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.header{
+    height: 10vh;
+    width: 100vw;
+    background-color:rgba(209, 110, 242, 0.541);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#logo{
+    height: 10vh;
+    width: 34vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(250, 126, 112, 0.537); 
+    transition: all 3s linear 0s;
+
+}
+
+#logopic img{
+    
+    height: 9vh;
+    width: 9vh;
+    border-radius: 50%;
+}
+ 
+#logo h1{
+    font-size: large;
+    color: white;
+}
+
+#nav-lists{
+    padding: 12px;
+    width: 50vw;
+  
+}
+
+#nav-lists ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size:small;
+}
+
+#nav-lists li::after{
+content: '';
+height: 2.5px;
+width: 0;
+background-color: #f75344;
+transition:all .2s linear 0s;
+display: block;
+margin: auto;
+border-radius: 2px;
+}
+
+#nav-lists li:hover::after{
+width: 100%;
+}
+
+#logopic img:hover{
+animation: logoanim 2s linear 0s 4 normal;
+}
+
+
+@keyframes logoanim{
+from{
+transform: rotatez(0deg);
+}
+to{
+transform: rotatez(360deg);
+}
+}
+
+
+.fa{
+    visibility: hidden;
+}
+
+
+
+/* main kaam */
+@media(max-width:800px){
+
+
+.fa{
+    visibility: visible;
+    display: block;
+    font-size: x-large;
+    padding: 20px;
+    margin:0 20px 0 0;
+
+    color: white;
+    cursor: pointer;
+
+}
+
+#nav-lists ul{
+    display: block;
+}
+#nav-lists>ul>li{
+    padding: 4vh;
+    text-align: left;
+}
+
+#nav-lists{
+    height: 100vh;
+    width: 20vh;
+    background: #08faad;
+    position: absolute;
+    right:-200px;
+    top: 0;
+    z-index: 3;
+
+    transition: all 0.3s linear 0s;
+}
+}
+
+
+
+.main{
+    height: 50vh;
+    width: 100vw;
+    padding: 5px;
+    margin: 3vh;
+    font-family: cursive;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.firstline{
+    font-size: xx-large;
+    color:rgb(7, 189, 7);
+
+}
+.secondline{
+    color: #f64433;
+    font-size: xxx-large;
+}
+.secondline2{
+    font-size: large;
+    color: white;
+}
+
+.thirdline{
+    font-size: x-large;
+}
+.dev{
+    color: rgb(255, 0, 247);
+}
+.yar{
+    color: dodgerblue;
+}
